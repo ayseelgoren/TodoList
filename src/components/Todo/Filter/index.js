@@ -26,14 +26,14 @@ function  Filter({filteredTodos,todos,setlist,list}){
 		</span>
 
                 <ul className="filters">
-                    <li>
-                        <a className="selected" onClick={()=>allTodos()}>All</a>
+                    <li className="selected" onClick={allTodos}>
+                        <span >All</span>
                     </li>
-                    <li>
-                        <a  onClick={()=>activeTodos()}>Active</a>
+                    <li onClick={activeTodos}>
+                        <span>Active</span>
                     </li>
-                    <li>
-                        <a onClick={()=>completedTodos()} >Completed</a>
+                    <li onClick={completedTodos}>
+                      <span>Completed</span>  
                     </li>
                 </ul>
 
