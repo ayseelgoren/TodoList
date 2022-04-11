@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, { useState} from 'react';
 const defaultValue = {name:"",state:"view"};
 function TodoInsert({addTodos,todos,setlist,list}) {
     const [todo,setTodo] = useState(defaultValue);

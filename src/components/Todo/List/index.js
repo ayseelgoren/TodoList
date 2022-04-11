@@ -1,5 +1,4 @@
 import React from "react";
-import todo from "../index";
 
 function  List({updatedTodos,todos,setlist,list}){
 
@@ -30,7 +29,7 @@ return (
 
                     <li className={item.state} key={index}>
                         <div className="view">
-                            <input className="toggle" type="checkbox"  checked={item.state == "completed" ? true : false}
+                            <input className="toggle" type="checkbox"  checked={item.state === "completed" ? true : false}
                                    onClick={finished} name={item.name}/>
                             <label>{item.name}</label>
 
